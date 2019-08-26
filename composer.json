@@ -1,0 +1,19 @@
+{
+    "name": "sdotbertoli/utils",
+    "description": "Utils for projects",
+    "require": {
+        "php": "^7.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stefano Bertoli",
+            "email": "s.bertoli@ictec.it"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Utils\\": "src/Utils"
+        }
+    }
+}
