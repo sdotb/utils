@@ -39,9 +39,17 @@ class Utils
         return (int)(microtime(true)*1000000000);
     }
 
-    public static function randStr(int $l = 32, string $c = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890')
+    /**
+     * Generate a randomized string.
+     *
+     * @param int $l Length of the result string
+     * @param string $c List of chars used to compose the result
+     * 
+     * @return string
+     */
+    public static function randStr(int $l = 32, string $c = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'): string
     {
         for ($s = '', $cl = strlen($c)-1, $i = 0; $i < $l; $s .= $c[mt_rand(0, $cl)], ++$i);
-        return $s;
+        return (string)$s;
     }
 }
