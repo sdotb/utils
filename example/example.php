@@ -9,7 +9,7 @@
  */
 require __DIR__ . '/../vendor/autoload.php';
 
-use Utils\Utils;
+use SdotB\Utils\Utils;
 
 try {
     print 'Timestamps generator:'.PHP_EOL;

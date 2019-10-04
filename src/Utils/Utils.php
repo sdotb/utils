@@ -1,5 +1,5 @@
 <?php
-namespace Utils;
+namespace SdotB\Utils;
 
 /**
  * Easy set of utility for projects

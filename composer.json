@@ -1,8 +1,8 @@
 {
-    "name": "sdotbertoli/utils",
+    "name": "sdotb/utils",
     "description": "Utils for projects",
     "require": {
-        "php": "^7.1"
+        "php": "^7.3"
     },
     "license": "MIT",
     "authors": [
@@ -13,7 +13,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Utils\\": "src/Utils"
+            "SdotB\\Utils\\": "src/Utils"
         }
     }
 }
