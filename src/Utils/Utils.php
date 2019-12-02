@@ -52,4 +52,21 @@ class Utils
         for ($s = '', $cl = strlen($c)-1, $i = 0; $i < $l; $s .= $c[mt_rand(0, $cl)], ++$i);
         return (string)$s;
     }
+
+    /**
+     * Get the client IP address
+     */
+    public static function clientIP(): string
+    {
+        if (!empty($_SERVER['HTTP_CLIENT_IP'])){
+            $ip=$_SERVER['HTTP_CLIENT_IP'];
+        } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
+            $ip=$_SERVER['HTTP_X_FORWARDED_FOR'];
+        } elseif (!empty($_SERVER['REMOTE_ADDR'])) {
+            $ip=$_SERVER['REMOTE_ADDR'];
+        } else {
+            $ip = '';
+        }
+        return (string)$ip;
+    }
 }

@@ -22,6 +22,8 @@ try {
     printf('custom (6 char [a-z]): \'%s\''.PHP_EOL,Utils::randStr(6,'abcdefghijklmnopqrstuvwxyz'));
     printf('custom (8 char not confusing chars): \'%s\''.PHP_EOL,Utils::randStr(8,'CDEFGHJKMNPRTUVWXY3679'));
     printf('custom (from a string: "my custom string!!"): \'%s\''.PHP_EOL,Utils::randStr(strlen('my custom string!!'),'my custom string!!'));
+    print PHP_EOL.'Client IP address:'.PHP_EOL;
+    printf('address: \'%s\''.PHP_EOL,Utils::clientIP());
 } catch (\Exception $e) {
     print $e->get_message();
 }
