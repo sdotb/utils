@@ -15,5 +15,8 @@
         "psr-4": {
             "SdotB\\Utils\\": "src/Utils"
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
     }
 }
